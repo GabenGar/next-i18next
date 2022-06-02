@@ -9,16 +9,16 @@
 If you are using next-i18next in production, please consider [sponsoring the package](https://github.com/sponsors/isaachinman) with any amount you think appropriate.
 
 ## Table of contents
-- [What is this?](#what-is-this?)
-- [Why next-i18next?](#why-next-i18next?)
-- [How does it work?](#how-does-it-work?)
+- [What is this?](#what-is-this)
+- [Why next-i18next?](#why-next-i18next)
+- [How does it work?](#how-does-it-work)
 - [Setup](#setup)
 - [Migration to v8](#migration-to-v8)
 - [Notes](#notes)
 - [Contributors](#contributors)
 - [Sponsors](#sponsors)
 
-## [What is this?](#table-of-contents)
+## What is this?
 
 Although NextJs [provides internationalised routing directly](https://nextjs.org/docs/advanced-features/i18n-routing), it does not handle any management of translation content, or the actual translation functionality itself. All NextJs does is keep your locales and URLs in sync.
 
@@ -28,7 +28,7 @@ While `next-i18next` uses [i18next](https://www.i18next.com/) and [react-i18next
 
 A live demo is [available here](http://next-i18next.com/). This demo app is the [simple example](./examples/simple/) - nothing more, nothing less.
 
-## [Why next-i18next?](#table-of-contents)
+## Why next-i18next?
 
 Easy to set up, easy to use: setup only takes a few steps, and configuration is simple.
 
@@ -36,7 +36,7 @@ No other requirements: `next-i18next` simplifies internationalisation for your [
 
 Production ready: `next-i18next` supports passing translations and configuration options into pages as props with SSG/SSR support.
 
-## [How does it work?](#table-of-contents)
+## How does it work?
 
 Your `next-i18next.config.js` file will provide configuration for `next-i18next`.
 After configuration, `appWithTranslation` allows us to use the `t` (translate) function in our components via hooks.
@@ -45,7 +45,7 @@ Then we add `serverSideTranslation` to [getStaticProps](https://nextjs.org/docs/
 
 Now our NextJs app is fully translatable!
 
-## [Setup](#table-of-contents)
+## Setup
 
 ### 1. Installation
 
@@ -293,11 +293,11 @@ For example, if you want to use `{` and `}` the config would look like this:
 }
 ```
 
-## [Migration to v8](#table-of-contents)
+## Migration to v8
 
 To migrate from previous versions to the version 8, check out the [v8-migration guide](./docs/v8-migration.md)
 
-## [Notes](#table-of-contents)
+## Notes
 
 ### Vercel and Netlify
 
@@ -327,7 +327,7 @@ Set the `ns` option, like in [this example](https://github.com/locize/next-i18ne
 If you cannot or do not want to provide the `ns` array, calls to the `t` function will cause namespaces to be loaded on the fly. This means you'll need to handle the "not ready" state by checking `ready === true` or `props.tReady === true`. Not doing so will result in rendering your translations before they loaded, which will cause "save missing" be called despite the translations actually existing (just yet not loaded).
 This can be done with the [useTranslation hook](https://react.i18next.com/latest/usetranslation-hook#not-using-suspense) or the [withTranslation HOC](https://react.i18next.com/latest/withtranslation-hoc#not-using-suspense).
 
-## [Contributors](#table-of-contents)
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
@@ -338,7 +338,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
-## [Sponsors](#table-of-contents)
+## Sponsors
 
 <a href="https://locize.com/" target="_blank">
   <img src="https://raw.githubusercontent.com/i18next/i18next/master/assets/locize_sponsor_240.gif" width="240px">
