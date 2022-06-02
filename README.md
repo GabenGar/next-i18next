@@ -8,6 +8,16 @@
 
 If you are using next-i18next in production, please consider [sponsoring the package](https://github.com/sponsors/isaachinman) with any amount you think appropriate.
 
+## Table of contents
+- [What is this?](#what-is-this?)
+- [Why next-i18next?](#why-next-i18next?)
+- [How does it work?](#how-does-it-work?)
+- [Setup](#setup)
+- [Migration to v8](#migration-to-v8)
+- [Notes](#notes)
+- [Contributors](#contributors)
+- [Sponsors](#sponsors)
+
 ## What is this?
 
 Although NextJs [provides internationalised routing directly](https://nextjs.org/docs/advanced-features/i18n-routing), it does not handle any management of translation content, or the actual translation functionality itself. All NextJs does is keep your locales and URLs in sync.
@@ -285,7 +295,7 @@ For example, if you want to use `{` and `}` the config would look like this:
 
 ## Migration to v8
 
-To migrate from previous versions to the version 8, check out the [v8-migration guide](https://github.com/isaachinman/next-i18next/tree/master/docs/v8-migration.md)
+To migrate from previous versions to the version 8, check out the [v8-migration guide](./docs/v8-migration.md)
 
 ## Notes
 
