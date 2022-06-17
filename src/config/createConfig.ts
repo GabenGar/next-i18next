@@ -1,6 +1,8 @@
 import { defaultConfig } from './defaultConfig'
 import { InternalConfig, UserConfig } from '../types'
 import { FallbackLng } from 'i18next'
+import fs from 'fs'
+import path from 'path'
 
 const deepMergeObjects = ['backend', 'detection'] as (keyof Pick<UserConfig, 'backend' | 'detection'>)[]
 
@@ -46,9 +48,6 @@ export const createConfig = (userConfig: UserConfig): InternalConfig => {
     combinedConfig.preload = locales
 
     if (!hasCustomBackend) {
-      const fs = require('fs')
-      const path = require('path')
-
       //
       // Validate defaultNS
       // https://github.com/isaachinman/next-i18next/issues/358
